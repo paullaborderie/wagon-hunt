@@ -1,0 +1,14 @@
+<div class="container text-center">
+  <h1>Discover our Products</h1>
+
+  <p>
+    Our brand new products are:
+  </p>
+
+  <ul>
+    <% @products.each do |product| %>
+      <li> <%= product %> </li>
+    <% end %>
+  </ul>
+
+</div>
