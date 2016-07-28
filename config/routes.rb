@@ -6,7 +6,9 @@ Rails.application.routes.draw do
   get "/contact" => "pages#join_us"
   get "/faq" => "pages#faq"
   get "/how-it-works" => "pages#how_it_works"
-  get "products" => "products#index"
-  get "products/:id" => "products#show"
+
+  #routes CRUD pour products
+  resources :products
+
 end
 
