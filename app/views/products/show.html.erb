@@ -4,6 +4,10 @@
 
   <h2><%= @product.name %></h2>
 
-  <h3>Catégorie : <%= @product.name %> </h3>
+  <h3>Catégorie : <%= @product.category %> </h3>
+
+  <p>
+    <%= link_to "Revenir à la liste", products_path, class: "btn btn-success" %>
+  </p>
 
 </div>

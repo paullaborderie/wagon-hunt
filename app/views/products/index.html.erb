@@ -2,12 +2,19 @@
   <h1>Discover our Products</h1>
 
   <p>
+    <%= link_to "Revenir à l'acceuil", root_path, class: "btn btn-primary" %>
+  </p>
+
+
+  <p>
     Our brand new products are:
   </p>
 
   <ul>
     <% @products.each do |product| %>
-      <li> <%= product.name %> (<%= product.name %>) </li>
+      <li> <%= link_to product.name, product_path(product)%>
+      (<%= product.url %>)
+      </li>
     <% end %>
   </ul>
 
