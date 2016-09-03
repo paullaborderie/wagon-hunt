@@ -34,7 +34,7 @@ before_action :find_product, only: [:show, :edit, :update, :destroy]
 
   private
   def product_params
-    params.require(:product).permit(:name, :url)
+    params.require(:product).permit(:name, :url, :tagline)
   end
   def find_product
     @product = Product.find(params[:id])
