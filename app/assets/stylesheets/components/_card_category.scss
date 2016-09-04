@@ -1,0 +1,13 @@
+.card-category {
+    font-size: 20px;
+    display: block;
+    line-height: 200px;
+    text-align: center;
+    color: white;
+    background: $green;
+    font-weight: bold;
+}
+
+.card-category:hover {
+  color: white;
+}
