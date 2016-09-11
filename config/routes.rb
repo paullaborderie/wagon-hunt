@@ -11,6 +11,6 @@ Rails.application.routes.draw do
 
   #routes CRUD pour products
   resources :products
-
+  resources :upvotes, only: [ :create, :destroy ]
 end
 
