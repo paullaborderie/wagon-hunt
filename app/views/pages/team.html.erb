@@ -1,9 +1,14 @@
 <div class="container text-center">
-  <h1>Meet the team</h1>
-
-  <ul>
-    <%  @members.each do |member| %>
-    <li> Member: <%=member%> </li>
-    <% end %>
-  </ul>
+  <div class="row">
+    <div class="col-sm-6 col-xs-4 col-sm-offset-4">
+      <h1>Meet the team</h1>
+      <%= cl_image_tag "eopjvoo8sylkrotfha5i", gravity: "face", width: 150, height: 150, crop: "thumb",  radius: "max" %>
+      <ul>
+        <%  @members.each do |member| %>
+        <li> Member: <%=member%> </li>
+        <% end %>
+      </ul>
+      <%= cl_image_tag "dilzmbnxrbp4dtwpsojs", gravity: "face", width: 150, height: 150, crop: "thumb", radius: "max" %>
+    </div>
+  </div>
 </div>
