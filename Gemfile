@@ -13,6 +13,9 @@ gem 'attachinary'
 gem "jquery-fileupload-rails"
 gem "coffee-rails"
 
+gem 'inherited_resources', github: 'activeadmin/inherited_resources'
+gem 'activeadmin', github: 'activeadmin'
+
 gem 'sass-rails'
 gem 'jquery-rails'
 gem 'uglifier'
