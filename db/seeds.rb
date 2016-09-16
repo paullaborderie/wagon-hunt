@@ -14,10 +14,10 @@
 boris = User.create!(email: "boris@lewagon.org", password: "testtest")
 seb = User.create!(email: "seb@lewagon.org", password: "testtest")
 
-kudoz = Product.create!(user: boris, name: "Kudoz", url: "http://getkudoz.com", tagline: "Tinder for job search", category: "tech")
-uslide = Product.create!(user: boris, name: "uSlide", url: "http://uslide.io", tagline: "Youtube sucks for education", category: "education")
-medpics = Product.create!(user: seb, name: "Medpics", url: "http://medpics.com", tagline: "Share your diagnosis", category: "tech")
-le_wagon = Product.create!(user: seb, name: "Le Wagon", url: "http://lewagon.com", tagline: "We bring coding skills to creative people", category: "education")
+kudoz = Product.create!(user: boris, name: "Kudoz", url: "http://getkudoz.com", tagline: "Tinder for job search", category: "tech", facebook_url: "https://www.facebook.com/getkudoz/?fref=ts", twitter_url: "https://twitter.com/GetKudoz")
+uslide = Product.create!(user: boris, name: "uSlide", url: "http://uslide.io", tagline: "Youtube sucks for education", category: "education", facebook_url: "https://www.facebook.com/Uslide.net/?hc_ref=SEARCH&fref=nf", twitter_url: "https://twitter.com/")
+medpics = Product.create!(user: seb, name: "Medpics", url: "http://medpics.com", tagline: "Share your diagnosis", category: "tech", facebook_url: "https://www.facebook.com/medpicsapp/", twitter_url: "https://twitter.com/MedPicsApp")
+le_wagon = Product.create!(user: seb, name: "Le Wagon", url: "http://lewagon.com", tagline: "We bring coding skills to creative people", category: "education", facebook_url: "https://www.facebook.com/lewagon/?fref=ts", twitter_url: "https://twitter.com/Lewagonparis")
 
 # Upvotes?
 

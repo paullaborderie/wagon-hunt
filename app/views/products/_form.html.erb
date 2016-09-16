@@ -3,6 +3,8 @@
         <%= f.input :url, placeholder: "http://getkudoz.com", label: "Which url?" %>
         <%= f.input :tagline, placeholder: "Tinder for jobsearch", label: "Which tagline?" %>
         <%= f.input :category, collection: ["tech", "education", "design"], prompt: "Which category?" %>
+        <%= f.input :facebook_url, placeholder: "http://facebook.com/kudoz", label: "Which facebook url?" %>
+        <%= f.input :twitter_url, placeholder: "http://twitter.com/kudoz", label: "Which twitter url?" %>
         <%= f.input :photo, as: :attachinary %>
         <%= f.button :submit, "Add", class: "btn btn-primary" %>
       <% end %>
